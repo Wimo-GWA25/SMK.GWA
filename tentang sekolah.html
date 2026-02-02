@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tentang Sekolah - Sekolah SMK Lentera Harapan</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #4fd8d8;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Untuk positioning kotak */
+        }
+        .header-box {
+            position: absolute;
+            top: 0px;
+            right: 0px; /* Di kanan header */
+            background-color: white;
+            color: #333;
+            padding: 75px; /* Padding kecil */
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+            width: 100px; /* Lebar kecil */
+            height: auto; /* Tinggi otomatis */
+            font-size: 12px; /* Font kecil */
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        nav a.active {
+            background-color: #007bff;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            max-height: 800px;
+            object-fit: cover;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .profile {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(198, 165, 165);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: rgb(255, 255, 255);
+        }
+        #clock {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .bad{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .social-container {
+            display: flex;
+            flex-direction: column; /* Susunan atas bawah */
+            justify-content: flex-start; /* Di kiri halaman */
+            align-items: flex-start;
+            gap: 10px; /* Jarak antar item */
+            margin-bottom: 20px;
+        }
+        .social-item {
+            text-align: left; /* Teks rata kiri */
+            padding: 5px; /* Padding kecil */
+        }
+        .social-item img {
+            width: 30px; /* Ukuran logo kecil */
+            height: 30px;
+            margin-right: 10px; /* Jarak logo dengan teks */
+            vertical-align: middle;
+        }
+        .social-item a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px; /* Font kecil */
+            font-weight: bold;
+            vertical-align: middle;
+        }
+        .social-item a:hover {
+            color: #007bff;
+        }
+        .moving-text {
+            overflow: hidden; /* Menyembunyikan teks yang keluar dari container */
+            white-space: nowrap; /* Mencegah teks wrap */
+            animation: scroll-left 5s ease-in-out
+             forwards; /* Animasi 5 detik, berhenti di akhir */
+        }
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%); /* Mulai dari kanan */
+            }
+            100% {
+                transform: translateX(0%); /* Berhenti di posisi normal (kiri) */
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-box"></div>
+    <div style="text-align: left;" id="clock"></div>
+    <img src="download.png" alt="Logo Sekolah" style="height: 65px; position: absolute; top: 15px; right: 20px;">
+    <img src="logo-removebg-preview.png" alt="Logo Sekolah" style="height: 65px; position: absolute; top: 15px; right: 150px;">
+    <h1 style="text-align: left;" class="moving-text">Selamat Datang Di Website Sekolah SMK Lentera Harapan</h1>
+</header>
+<nav>
+    <a href="beranda.html">Beranda</a>
+    <a href="tentang sekolah.html" class="active">Tentang Sekolah</a>
+    <a href="kurikulum.html">Kurikulum</a>
+    <a href="jurusan.html">Jurusan</a>
+    <a href="program.html">Program Sekolah</a>
+    <a href="sarana.html">Sarana Prasarana</a>
+    <a href="hubungan.html">Hubungan Industri</a>
+    <a href="kontak.html">Kontak</a>
+</nav>
+<section class="hero">
+    <img src="no1.jpeg" alt="Gambar Sekolah SML LH">
+</section>
+<section class="profile">
+    <h2>Tentang Sekolah</h2>
+    <p>Visi dan misi SMK Lentera Harapan berakar pada filosofi pendidikan yang sama dengan jaringan Sekolah Lentera Harapan lainnya, yaitu:
+Visi: Pengetahuan Sejati, Iman dalam Kristus, dan Karakter Ilahi.
+Misi:
+Menyatakan keutamaan Kristus dan aktif dalam pemulihan melalui pendidikan holistik.
+Menyediakan pendidikan berkualitas tinggi bagi masyarakat, termasuk bagi mereka yang kurang beruntung, dengan menerapkan pendidikan transformasional yang terintegrasi dan seimbang.
+Membentuk siswa menjadi individu yang tidak hanya unggul secara akademik tetapi juga memiliki karakter yang takut akan Tuhan. 
+Nilai-Nilai Sekolah
+Sekolah ini menjunjung tinggi nilai-nilai: bertumbuh, berulang, ceria, disiplin, seru, mengagungkan, rumah, dan menyinari.</p>
+</section>
+<section class="profile">
+<h2>Data Singkat Sekolah</h2>
+<p>Nama: SMKS Lentera Harapan (juga dikenal sebagai Pendidikan Lentera Harapan Permata Hati).</p>
+<p>Alamat: Jl. Kayu Goen No.1, Ciakar, Panongan, Tangerang, Banten 15710.</p>
+<p>Telepon: (021) 29013953.</p>
+<p>Status: Swasta.</p>
+<p>SK Izin Operasional: 421.3/390/DISDIK.</p>
+<p>Tanggal SK Izin Operasional: 2015-08-31.</p>
+<p>NPSN: 69938646.</p>
+<p>Kepala Sekolah: Sherly Meidyana.</p> 
+<p>Program Kejuruan: Akuntansi (AK) dan Teknik Komputer dan Jaringan (TKJ).</p>
+</section>
+<section class="profile">
+    <h2>Unggulan Sekolah</h2>
+    <p>Keunggulan (Umum SLH):
+Menyediakan pendidikan komprehensif dan berkualitas.
+Mengintegrasikan iman Kristen ke dalam ilmu pengetahuan.
+Mendidik siswa secara utuh (holistik) agar mampu berpikir kritis, berkolaborasi, dan kreatif..</p>
+<p> <a href="unggulan.html" style="color: black;">Selengkapnya...</a></p>
+</section>
+<footer>
+    <p>&copy; 2026 Design By: Tim GWA (Nicholas,Hubert,Wimo,Vallent,Kenyto). Semua hak dilindungi.</p>
+    <bad>
+
+<div class="social-container">
+    <div class="social-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="Logo Instagram">
+        <a href="https://www.instagram.com/osis.lentera?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@osis.lentera</a>
+    </div>
+
+    <div class="social-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1200px-YouTube_full-color_icon_%282017%29.svg.png" alt="Logo YouTube">
+        <a href="https://youtube.com/@osissmklenteraharapan?si=P062cvgY_CWiR97u" target="_blank">OSIS SMK Lentera Harapan</a>
+    </div>
+</div>
+
+</bad>
+</footer>
+<script>
+    function updateClock() {
+        const now = new Date();
+        const time = now.toLocaleTimeString('id-ID');
+        document.getElementById('clock').textContent = 'Waktu: ' + time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+</body>
+</html>
